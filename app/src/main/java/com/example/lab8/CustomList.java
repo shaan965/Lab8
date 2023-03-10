@@ -67,13 +67,12 @@ public class CustomList extends ArrayAdapter<City> {
         }
         cities.remove(city);
     }
-
-//    public void delete(City city) {
-//        if (!cities.contains(city)) {
-//            throw new IllegalArgumentException();
-//        }
-//        cities.remove(city);
+    public int countCities() {
+        return 0;
+    }
+//    public int countCities() {
+//        return cities.size();
 //    }
 
-//    public void delete(City)
+
 }
