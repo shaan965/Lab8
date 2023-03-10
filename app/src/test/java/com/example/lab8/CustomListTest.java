@@ -58,10 +58,15 @@ public class CustomListTest {
     @Test
     void testCountCities() {
         CustomList cityList = MockCityList();
-        assertEquals(1, cityList.countCities());
+
+        // Assert that the initial count of cities is 0
+        assertEquals(0, cityList.countCities());
+
+        // Add a new city to the list and assert that the count increases by 1
         City newCity = new City("Yellowknife", "Northwest Territories");
-        cityList.add(newCity);
-        assertEquals(2, cityList.countCities());
+        cityList.addCity(newCity);
+        assertEquals(1, cityList.countCities());
+
     }
 
 }
